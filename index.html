@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html style="background-color: rgb(245, 129, 20);">
+    
+    <head>
+        <link href="tampilan.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>GAME BURIK</title>
+    </head>
+
+    <body>
+        <div id="welcome">
+            <p id="head">WELCOME</p>
+            <img src="h8.jpg"; id="logo"> 
+            <button class="button"; id="eng-ind"; name="eng-ind" onclick="clickStart('english')">ENGLISH > INDONESIA</button>                                                                                                                                                                                                                           
+            <button class="button"; id="ind-eng"; name="ind-eng" onclick="clickStart('bahasa')">INDONESIA > ENGLISH</button>        
+        </div>
+        <div id="play">
+            <P id="score"; name="score"> SCORE : <span id= "nilai"> 0 </span></P>
+            <p id="time"; name= "time">TIME :</p>
+            <div id="backgrond">
+                <img style="display: inline-block" src="h8.jpg"; id="logo"> 
+                <div style="display: inline-block; font-size:x-large;"  id="main">
+                    <p id="question">PERTANYAAN</p>
+                    <input type="text" id="answer" oninput="answering()">                                                                    
+                </div>
+            </div>
+        </div>
+        <div id="end">
+            <p id="selamat">CONGRATULATION !!</p>
+            <img src="h8.jpg"; id="logo"> 
+            <p id="yourScore">YOUR SCORE : <span id="finalScore"></span></p>
+        </div>
+        <script src="data.js"></script>
+    </body>
+</html>
